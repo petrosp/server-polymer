@@ -1,0 +1,34 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<polymer-element name="cth-click">
+	<template>
+		<style>
+			:host img.concept_image {
+				height: 200px;
+			}
+			:host section {
+				display: inline;
+			}
+		</style>
+		<p>concept: bicycle</p>
+		<template repeat="{{ image in imageList }}">
+			<section class="concept_item">
+				<span><img class="concept_image" src="{{image.imageURL}}"></span>
+			</section>
+		</template>
+	</template>
+	<script>
+		Polymer('cth-click', {
+			imageList: [
+				{ "imageURL": "../images/odd_bike.jpg", "clicks": 0 },
+				{ "imageURL": "../images/cart_bike.jpg", "clicks": 0 },
+				{ "imageURL": "../images/cart_bike.jpg", "clicks": 0 },
+				{ "imageURL": "../images/cart_bike.jpg", "clicks": 0 },
+				{ "imageURL": "../images/cart_bike.jpg", "clicks": 0 },
+				{ "imageURL": "../images/cart_bike.jpg", "clicks": 0 },
+				{ "imageURL": "../images/cart_bike.jpg", "clicks": 0 },
+				{ "imageURL": "../images/shopping_bike.jpg", "clicks": 0 }
+			]
+		});
+	</script>
+</polymer-element>
