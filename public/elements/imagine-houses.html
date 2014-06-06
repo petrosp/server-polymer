@@ -9,21 +9,20 @@
       }
     </style>
      <template repeat="{{ image in imageList }}">
-       <imagine-house url="{{image.imageUrl}}"></imagine-house>
+       <imagine-house url="{{image.imageUrl}}" total="{{ total }}"></imagine-house>
     </template>
-    <h1>{{ count }}</h1>
   </template>
   
   <script>
   	Polymer('imagine-houses', {
-      count: 0,
-      increaseCount: function(){
-        this.count = this.count + 1;
-      },
+      total: 0,
   		imageList: [
-        {imageUrl: 'http://www.ervas.nl/sites/ervas/files/resize/gevelrenovatie/flat%20tekening-300x203.jpg'},
-        {imageUrl: 'http://imgs.steps.dragoart.com/how-to-draw-a-house-for-kids-step-8_1_000000058125_5.jpg'},
-        {imageUrl: 'http://www.gescosoftwareengineering.nl/Diversen/Kleurplaten/Soorten/Boerderij/boerderij053.jpg'}
+        {
+          imageUrl: 'http://www.ervas.nl/sites/ervas/files/resize/gevelrenovatie/flat%20tekening-300x203.jpg'},
+        {
+          imageUrl: 'http://imgs.steps.dragoart.com/how-to-draw-a-house-for-kids-step-8_1_000000058125_5.jpg'},
+        {
+          imageUrl: 'http://www.gescosoftwareengineering.nl/Diversen/Kleurplaten/Soorten/Boerderij/boerderij053.jpg'}
   	]
     });
   </script>
