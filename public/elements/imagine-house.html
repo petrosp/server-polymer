@@ -1,4 +1,4 @@
-<polymer-element name="imagine-house" attributes="url total" noscript>
+'<polymer-element name="imagine-house" attributes="url total" noscript>
   <template>
     <style>
       :host {
@@ -37,14 +37,9 @@
         }
       },
       increaseCount: function(){
-        this.count = this.count + 1;
+        this.count = this.count + 2;
         this.total = this.total + 1;
-      },
-      imageList: [
-        {imageUrl: 'http://www.ervas.nl/sites/ervas/files/resize/gevelrenovatie/flat%20tekening-300x203.jpg'},
-        {imageUrl: 'http://imgs.steps.dragoart.com/how-to-draw-a-house-for-kids-step-8_1_000000058125_5.jpg'},
-        {imageUrl: 'http://www.gescosoftwareengineering.nl/Diversen/Kleurplaten/Soorten/Boerderij/boerderij053.jpg'}
-    ]
+      }
     });
   </script>
 </polymer-element>
