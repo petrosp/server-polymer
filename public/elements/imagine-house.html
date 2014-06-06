@@ -1,0 +1,27 @@
+<polymer-element name="imagine-house" attributes="url" noscript>
+  <template>
+    <style>
+      :host {
+        display: inline-block;
+        padding: 50px;
+      }
+      :host(:hover) {
+        background: green;
+      }
+      img {
+        margin: 20px;
+        width: 200px;
+        padding: 10px;
+      }
+      img:hover {
+        background: red;
+      }
+
+      h1 {
+        text-align: center;
+      }
+    </style>
+    <span><img on-click="{{ increaseCount }}" src="{{url}}"></span>
+    <h1>{{ count }}</h1>
+  </template>
+</polymer-element>
